@@ -1,0 +1,176 @@
+1st
+
+  // temp.innerHTML = response.temp;
+      // cloud_pct.innerHTML = response.cloud_pct;
+      // feels_like.innerHTML = response.feels_like;
+      // humidity.innerHTML = response.humidity;
+      // min_temp.innerHTML = response.min_temp;
+      // max_temp.innerHTML = response.max_temp;
+      // wind_speed.innerHTML = response.wind_speed;
+      // wind_degrees.innerHTML = response.wind_degrees;
+      // sunrise.innerHTML = response.sunrise;
+      // sunset.innerHTML = response.sunset;
+
+
+      2
+
+      {/* <p className="card-text">Temperature is <span id="temp" ></span> </p>
+        <p className="card-text">cloud_pct is <span id="cloud_pct" ></span></p>
+        <p className="card-text">feels_like is <span id="feels_like" ></span></p>
+        <p className="card-text">humidity is <span id="humidity" ></span></p>
+        <p className="card-text">min_temp is <span id="min_temp" ></span></p>
+        <p className="card-text">max_temp is <span id="max_temp" ></span></p>
+        <p className="card-text">wind_speed is <span id="wind_speed" ></span></p>
+        <p className="card-text">wind_degrees is <span id="wind_degrees" ></span></p>
+        <p className="card-text">sunrise is <span id="sunrise" ></span></p>
+        <p className="card-text">sunset is <span id="sunset" ></span></p> */}
+        {/* <a href="#" className="btn btn-primary"></a> */}
+
+
+
+
+
+        // let temp, min_temp, max_temp, feels_like, humidity, cloud_pct, wind_degrees, wind_speed; 
+
+  const [city, setCity] = useState("Delhi");
+  const [temp, setTemp] = useState(0);
+  const [min_temp, setMin_temp] = useState(0);
+  const [max_temp, setMax_temp] = useState(0);
+  const [humidity, setHumidity] = useState(0);
+  const [cloud_pct, setCloud_pct] = useState(0);
+  const [wind_speed, setWind_speed] = useState(0);
+  const [wind_degrees, setWind_degrees] = useState(0);
+  const [sunrise, setSunrise] = useState(0);
+  const [sunset, setSunset] = useState(0);
+  const [feels_like, setFeels_like] = useState(0);
+
+  const getWeather = async () => {
+
+  
+  const options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': 'a6d70cf5b0msh787a1ebf4670e71p1e0f7djsn97c78a2cfb27',
+      'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
+    }
+  };
+  const url = 'https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Delhi'
+  // fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Delhi', options)
+ let data = await fetch(url);
+ let parsedData = await data.json();
+ console.log(parsedData)
+    // .then(response => response.json())
+    // .then(response => {
+    //   console.log(response)
+    //   // 1st   
+    setCity(parsedData.city)
+      
+    // })
+    .catch(err => console.error(err));
+  }
+
+
+
+
+
+  
+  return (
+   <>
+   <div className="container">
+    <h2 style={{textAlign: "center"}}>Major Cities</h2>
+    <City city = "Delhi"/>
+    <City city = "Mumbai"/>
+    <City city = "Pune"/>
+    <City city = "Banglore"/>
+    <City city = "Chennai"/>
+
+   </div>
+   </>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <>
+  <h2>Hello Weather</h2>
+  <div className="container">
+
+
+  <div className="row">
+                      {responseData.map((element) => {
+                       <h3>check map</h3>
+                          return (<div className="col-md-4" key={element.cloud_pct}>   <h2>Check map</h2>
+                              <City temp={(element?.articles?.temp)} 
+                              cloud_pct={element.cloud_pct}
+                              feels_like={element.feels_like} 
+                              humidity={element.humidity} 
+                              max_temp={element.max_temp}
+                              min_temp={element.min_temp}
+                              sunrise={element.sunrise} 
+                              sunset={element.sunset} 
+                              wind_speed={element.wind_speed} 
+                              wind_degrees={element.wind_degrees} 
+                             
+                              />
+                        
+                          </div>)
+                      })}
+                  </div>  </div>
+
+  </>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //   <div className="container">
+ 
+  
+
+// <div className="col-md-12">
+//   <div className="wetherBg">
+//     <h1 className="heading">Weather App</h1>
+
+//     <div className="d-grid gap-3 col-4 mt-4">
+//       <input type="text" className="form-control"
+//         value={inputCity}
+//         onChange={handleChangeInput} />
+//       <button className="btn btn-primary" type="button"
+//         onClick={handleSearch}
+//       >Search</button>
+//     </div>
+//   </div>
+
+//   {Object.keys(data).length > 0 &&
+//     <div className="col-md-12 text-center mt-5">
+
+//       <div className="shadow rounded wetherResultBox">
+//         <img className="weathorIcon"
+//           src="https://i.pinimg.com/originals/77/0b/80/770b805d5c99c7931366c2e84e88f251.png" />
+
+//         <h5 className="weathorCity">
+//           {data?.name}
+//         </h5>
+//         <h6 className="weathorTemp">{((data?.temp))}°C</h6>
+//       </div>
+//     </div>
+//   }
+// </div>
+// </div>
