@@ -58,7 +58,7 @@ return (
 <input className="form-control my-3 " type="text" onChange={handleChangeInput} placeholder="Enter the City" aria-label="default input example" value={inputCity} style={{width: "50%", margin: "auto"}}/>
 <button type="button" className="btn btn-primary" onClick={handleSearch} style={{ margin: "auto", display: "flex", justifyContent: "center" }}>Enter</button>
 
-<div className="card my-3" style={{width : "50%"}} >
+<div className="card my-3 container d-flex d-flex-center" style={{width : "50%"}} >
   <div className="card-header" style={{display: 'flex', height: '3rem', alignItems: 'center', fontWeight: 'bold', size: '2 rem', justifyContent : 'center'}}>
   {inputCity}
   </div>
