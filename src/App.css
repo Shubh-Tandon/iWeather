@@ -1,3 +1,8 @@
+body{
+  background-image: url(/src/image/weather5.jpg) ; 
+  /* background-repeat: no-repeat; */
+}
+
 .App {
   text-align: center;
 }
@@ -38,10 +43,35 @@
 }
 
 .myContainer1{
-  /* background-image: url(/src/image/weather3.jpeg) ; */
-  background-color: #537FE7;
+
+  width: 100%;
+  height: 100%;
 }
 
-.myNav{
-  background-color: #609EA2;
-}
+
+  nav {
+    background-color: transparent;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav li {
+    padding: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+
+  .myNav{
+    margin-left: 20px;
+  }

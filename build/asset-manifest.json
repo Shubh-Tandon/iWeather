@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/iWeather/static/css/main.4ae081b1.css",
+    "main.js": "/iWeather/static/js/main.e6cfd340.js",
+    "static/js/787.4952e5be.chunk.js": "/iWeather/static/js/787.4952e5be.chunk.js",
+    "static/media/weather3.jpeg": "/iWeather/static/media/weather3.93704d60d6f9458834eb.jpeg",
+    "index.html": "/iWeather/index.html",
+    "main.4ae081b1.css.map": "/iWeather/static/css/main.4ae081b1.css.map",
+    "main.e6cfd340.js.map": "/iWeather/static/js/main.e6cfd340.js.map",
+    "787.4952e5be.chunk.js.map": "/iWeather/static/js/787.4952e5be.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ae081b1.css",
+    "static/js/main.e6cfd340.js"
+  ]
+}
