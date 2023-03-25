@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import App from '../App'
 import City from './City'
+import weatherPic from '../image/weather8.jpeg'
 // import Navbar from './Navbar';
 
 export default function SearchWeather(props) {
@@ -60,9 +61,12 @@ return (
 
 <div className="card my-3 container d-flex d-flex-center" style={{width : "70vw"}} >
   <div className="card-header" style={{display: 'flex', height: '3rem', alignItems: 'center', fontWeight: 'bold', size: '2 rem', justifyContent : 'center'}}> 
-  {inputCity}
+  {/* {inputCity} */}
+  {data?.temp?(inputCity):(<h4 style={{color: 'black', fontSize: '1.75rem'}}>Enter City Name to get the details</h4>)}
   </div>
-  <ul className="list-group list-group-flush">
+  <div className='testit'> 
+  {data?.temp?(
+   <ul className="list-group list-group-flush">
     <li className="list-group-item">Temperature {(data?.temp)}°C</li>
     <li className="list-group-item">Feels Like {data?.feels_like}°C</li>
     <li className="list-group-item">Humidity {data?.humidity}</li>
@@ -73,7 +77,26 @@ return (
     {/* <li className="list-group-item">Cloud pct {data?.cloud_pct}</li> */}
     <li className="list-group-item">Wind Speed {data?.wind_speed}</li>
     <li className="list-group-item">Wind Degrees {data?.wind_degrees}</li>
-  </ul>
+  </ul>):(
+    <div className='row'> 
+    <div className='col-md-7'>
+        <img style={{height: '750px', width: '600px', display: 'block', margin: '0 0 1rem 1rem'}} src={weatherPic} alt="weather-pic" />
+    </div>
+    <div className='col-md-5 d-flex flex-column justify-content-center align-items-center getCityClass'>
+      <h1>Please </h1>
+      <h1>Enter </h1>
+      <h1>the </h1>
+      <h1>City </h1>
+      <h1>Name </h1>
+      <h1>to </h1>
+      <h1>get </h1>
+      <h1>the </h1>
+      <h1>details </h1>
+    </div>
+    </div>
+  )}
+   </div>
+
 </div>
 </div>
 {/* <div className="container"> */}

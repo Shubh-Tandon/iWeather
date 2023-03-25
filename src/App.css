@@ -1,5 +1,6 @@
 body{
-  background-image: url(/src/image/weather5.jpg) ; 
+  background-image: url(/src/image/weather6.jpeg) ; 
+  opacity: 0.6;
   /* background-repeat: no-repeat; */
 }
 
@@ -69,9 +70,24 @@ body{
   nav a {
     text-decoration: none;
     color: #fff;
+
+    
   }
 
 
   .myNav{
     margin-left: 20px;
+    font-size: 25px;
+
   }
+
+.iWeather{
+  font-size: 30px;
+  font-family: 'Fasthand', cursive;
+
+}
+
+.getCityClass{
+  /* font-size: 35px; */
+  color: purple;
+}
