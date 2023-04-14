@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/iWeather/static/css/main.54b23260.css",
-    "main.js": "/iWeather/static/js/main.73a7d527.js",
+    "main.css": "/iWeather/static/css/main.0c595bb4.css",
+    "main.js": "/iWeather/static/js/main.ff840025.js",
     "static/js/787.4952e5be.chunk.js": "/iWeather/static/js/787.4952e5be.chunk.js",
     "static/media/weather6.jpeg": "/iWeather/static/media/weather6.b30e3f8e1e652a202b78.jpeg",
     "static/media/weather2.jpg": "/iWeather/static/media/weather2.e339e3cca39a362c1e8c.jpg",
     "static/media/weather8.jpeg": "/iWeather/static/media/weather8.058e8a44f600b0dd149c.jpeg",
     "index.html": "/iWeather/index.html",
-    "main.54b23260.css.map": "/iWeather/static/css/main.54b23260.css.map",
-    "main.73a7d527.js.map": "/iWeather/static/js/main.73a7d527.js.map",
+    "main.0c595bb4.css.map": "/iWeather/static/css/main.0c595bb4.css.map",
+    "main.ff840025.js.map": "/iWeather/static/js/main.ff840025.js.map",
     "787.4952e5be.chunk.js.map": "/iWeather/static/js/787.4952e5be.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.54b23260.css",
-    "static/js/main.73a7d527.js"
+    "static/css/main.0c595bb4.css",
+    "static/js/main.ff840025.js"
   ]
 }
